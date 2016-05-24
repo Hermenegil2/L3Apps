@@ -6,6 +6,7 @@ package py.edu.facitec.l3.model;
  *
  */
 public class Proveedor {
+	private String codigoo;
 	private int codigo;
 	private String nombreCompañia;
 	private String nombreContacto;
@@ -20,6 +21,7 @@ public class Proveedor {
 	
 	public Proveedor() {
 		super();
+		codigoo="";
 		codigo=0;
 		nombreCompañia="";
 		nombreContacto="";
@@ -49,7 +51,13 @@ public class Proveedor {
 		this.cargo = cargo;
 		this.pais = pais;
 	}
+	public String getCodigoo() {
+		return codigoo;
+	}
 
+	public void setCodigoo(String codigoo) {
+		this.codigoo = codigoo;
+	}
 	public int getCodigo() {
 		return codigo;
 	}
